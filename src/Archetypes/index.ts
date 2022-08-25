@@ -1,6 +1,7 @@
 import Archetype from './Archetype';
 import Mage from './Mage';
 
-export { Mage };
+import Necromancer from './Necromancer';
+export { Mage, Necromancer };
 
 export default Archetype;
