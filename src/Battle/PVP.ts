@@ -10,9 +10,11 @@ export default class PVP extends Battle {
   }
 
   fight(): number {
-    while (this.player1.lifePoints > 0 && this.player2.lifePoints > 0) {
-      this.player1.attack(this.player2);
-      this.player2.attack(this.player1);
+    for (let index = 0; index < 600; index += 1) {
+      if (this.player1.lifePoints > 0 && this.player2.lifePoints > 0) {
+        this.player1.attack(this.player2);
+        this.player2.attack(this.player1);
+      }
     }
     const battleResult = super.fight();
     return battleResult;
